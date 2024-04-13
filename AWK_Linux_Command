@@ -1,0 +1,10 @@
+Awk is a scripting language used for manipulating data and generating reports. The awk command programming language requires no compiling and allows the user to use variables, numeric functions, string functions, and logical operators.
+1. AWK Operations: 
+(a) Scans a file line by line 
+(b) Splits each input line into fields 
+(c) Compares input line/fields to pattern 
+(d) Performs action(s) on matched lines
+1. Default behavior of Awk: By default Awk prints every line of data from the specified file.    $ awk '{print}' employee.txt
+2. Print the lines which match the given pattern.      awk '/manager/ {print}' employee.txt
+3. Splitting a Line Into Fields : For each record i.e line, the awk command splits the record delimited by whitespace character by default and stores it in the $n variables.     $ awk '{print $1,$4}' employee.txt
+Referance for all This command.           https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
